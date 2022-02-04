@@ -1,0 +1,610 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f5f0eb;
+
+}
+p{
+    font-family: "neue-haas-grotesk-text";
+    font-size: 35px;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+    font-kerning: normal;
+    color: #2B2628;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "neue-haas-grotesk-text";
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header{
+    padding: 20px 0;
+    height: 40px;
+    display: flex;
+}
+.logo{
+    width: 50%;
+}
+.nav{
+    width: 50%;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    margin: 0 8% 0 0;
+    font-size: 16px;
+    color: #2B2628;
+
+}
+.nav ul li a{
+    line-height: 40px;
+    font-size: 16px;
+    color: #2B2628;
+    transition: all .5s ease-in;
+    border-bottom: 1px solid transparent;
+}
+.nav ul li a:hover{
+    border-color: #2B2628;
+}
+
+h1{
+    font-size: 130px;
+	font-weight: 600;
+    line-height: 1;
+    letter-spacing: -3px;
+    font-kerning: normal;
+    color: #2B2628;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    font-family: "neue-haas-grotesk-display";
+}
+h2{
+    font-family: "neue-haas-grotesk-display";
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-kerning: normal;
+    color: #2B2628;
+    margin: 0 0 30px 0;
+}
+h3{
+    font-family: "neue-haas-grotesk-display";
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 1;
+    font-kerning: normal;
+    color: #2B2628;
+    margin: 0 0 20px 0;
+}
+
+h4{
+    font-family: "neue-haas-grotesk-text";
+    font-size: 20px;
+    font-weight: 400;
+    font-kerning: normal;
+    color: #2B2628;
+}
+
+h5{
+    font-family: "neue-haas-grotesk-text";
+    font-size: 35px;
+    font-weight: 400;
+    font-kerning: normal;
+    color: #2B2628;
+}
+
+.workall{
+    margin-bottom: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.worktitle{
+    width: 50%;
+}
+.worktitleinner{
+    max-width: 700px;
+    float: right;
+    width: 85%;
+}
+.workimg{
+    width: 50%;
+    margin-top: 0px;
+}
+.workall a{
+    display: block;
+}
+#wa{
+    width: 50%;
+    margin-top: 0px;
+    background-image: url(../images/twin-nations-thumbnail.jpg);
+    background-size:100% 100%;
+    position: relative;
+}
+#wa::before{
+    content: "";
+    display: block;
+    padding-top: 60%;
+}
+#wa a{
+    width: 100%;
+    display: block;
+}
+.watop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    z-index: 10;
+    padding: 3%;
+    display: none;
+    text-align: left;
+    transition: .5s ease;
+}
+.watop h4,.watop p,.watop h5{
+    color: #f5f0eb;
+    transition: .5s ease;
+}
+.watop h5{
+    margin-top: 30px;
+}
+#wa:hover .watop{
+    display: block;
+}
+#wa:hover{
+    background-image: url(../images/twin-nations-thumbnail1.jpg);
+      transition: .5s ease;
+}
+#wb{
+    width: 50%;
+    margin-top: 0px;
+    background-image: url(../images/the-real-italian-thumbnail.jpg);
+    background-size:100% 100%;
+    position: relative;
+}
+#wb:hover{
+    background-image: url(../images/the-real-italian-thumbnail1.jpg);
+      transition: .5s ease;
+}
+#wb::before{
+    content: "";
+    display: block;
+    padding-top: 60%;
+}
+#wb:hover .watop{
+    display: block;
+}
+#wb a{
+    width: 100%;
+    display: block;
+}
+#wc{
+    width: 50%;
+    margin-top: 0px;
+    background-image: url(../images/archive-thumbnail.jpg);
+    background-size:100% 100%;
+    position: relative;
+}
+#wc:hover{
+    background-image: url(../images/archive-thumbnail1.jpg);
+    transition: .5s ease;
+}
+#wc::before{
+    content: "";
+    display: block;
+    padding-top: 60%;
+}
+#wc:hover .watop{
+    display: block;
+}
+#wc a{
+    width: 100%;
+    display: block;
+}
+.worktitleinner h2{
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-kerning: normal;
+}
+.worktitleinner h3{
+    font-size: 55px;
+    font-weight: 400;
+    font-kerning: normal;
+}
+
+.aboutall{
+    margin-bottom: 120px;
+    display: flex; 
+    flex-wrap: wrap;
+}
+.abouttitle{
+    width: 50%;
+}
+.abouttitle h2{
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-kerning: normal;
+}
+.abouttitle h3{
+    font-size: 55px;
+    font-weight: 400;
+    font-kerning: normal;
+}
+.aboutintro{
+    width: 50%;
+}
+.aboutintro p{
+    font-weight: 400;
+    font-kerning: normal;
+    letter-spacing: -0.5px;
+}
+.aboutintro h5{
+    margin-top: 60px;
+    letter-spacing: -0.5px;
+    color: #2B2628;
+}
+.aboutintro h5 a{
+    font-size: 35px;
+    color: #2B2628;
+    text-decoration: underline;
+}
+.contactall{
+    margin-top: 0px;
+    display: flex; 
+}
+.contacttitle h2{
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-kerning: normal;
+}
+.contacttitle h3{
+    font-size: 55px;
+    font-weight: 400;
+    font-kerning: normal;
+}
+.icon{
+    border-top: 1px solid #2B2628;
+    border-bottom: 1px solid #2B2628;
+    margin: 20px 0;
+}
+.iconflex{
+    display: flex;
+}
+.iconpera,.iconperb,.iconperc,.iconperd{
+    width: 12%;
+    text-align: center;
+    padding: 7%;
+}
+.iconper img{
+    width: 100%;
+}
+.iconpera{
+    border-right: 1px solid #2B2628;
+    background-image: url(../images/email-icon1.png);
+    background-size: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.iconpera::before,.iconperb::before,.iconperc::before,.iconperd::before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.iconpera:hover{
+    background-image: url(../images/email-icon.png);
+    transition: .2s ease;
+}
+.iconpera a,.iconperb a,.iconperc a,.iconperd a,.icon a{
+    display: block;
+    height: 100%;
+}
+.iconperb{
+    border-right: 1px solid #2B2628;
+    background-image: url(../images/linkedin-icon1.png);
+    background-size: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.iconperb:hover{
+    background-image: url(../images/linkedin-icon.png);
+    transition: .2s ease;
+}
+.iconperc{
+    border-left: 1px solid #2B2628;
+    background-image: url(../images/dribbble-icon1.png);
+    background-size: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.iconperc:hover{
+    background-image: url(../images/dribbble-icon.png);
+    transition: .2s ease;
+}
+.iconperd{
+    background-image: url(../images/behance-icon1.png);
+    background-size: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.iconperd:hover{
+    background-image: url(../images/behance-icon.png);
+    transition: .2s ease;
+}
+.footerflex{
+    display: flex;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.footercreate{
+    width: 50%;
+}
+.footercreate p{
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    font-kerning: normal;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.footercopy{
+    width: 50%;
+}
+.footercopy p{
+    font-size: 16px;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*twinnations.html*/
+
+
+.twin1{
+    margin-top: 60px;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.twin2{
+    margin-top: 60px;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.twinnationstitle{
+    width: 50%;
+}
+.twinnationstitle h2{
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-kerning: normal;
+    margin: 0 0 0 0;
+}
+.twinnationstitle p{
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 20px;
+}
+    
+.twin-descrpiton{
+    width:50%
+}
+
+.twin-descrpiton .twin {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.twin-descrpiton h5 {
+    margin-top: 60px;
+    margin-bottom: 120px;
+    text-decoration: underline;
+}
+
+.twinimg{
+    width: 100%;
+    line-height: 1;
+    margin-top: 0px;
+}
+
+.twinimg img{
+    width: 100%;
+    line-height: 1;
+    margin-top: 1px;
+    display:block;
+}
+.twincon{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.twincondescription{
+    width: 50%;
+}
+.twincontext1{
+    max-width: 700px;
+    float: right;
+    width: 80%;
+    padding-top: 60px;
+    padding-right: 40px;
+}
+
+.twincontext2{
+    max-width: 700px;
+    float: left;
+    width: 80%;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-bottom: 70px;
+}
+
+.twinconimg{
+    width: 50%;
+    line-height: 1;
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+.twinconimg img{
+    display: block
+}
+
+.bom{
+    display: flex;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.bomback{
+    width: 50%;
+}
+
+.bomback p{
+    width:50%;
+    letter-spacing: -0.5px;
+    font-kerning: normal;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bomback p a{
+    transition: all .5s ease-in;
+    border-bottom: 1px solid transparent;
+}
+.bomback p a:hover{
+    border-color: #2B2628;
+}
+
+.bomprojects{
+    width: 50%;
+}
+
+.bomprev p{
+    letter-spacing: -0.5px;
+    font-kerning: normal;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: left;
+}
+.bomprev p a{
+    transition: all .5s ease-in;
+    border-bottom: 1px solid transparent;
+}
+.bomprev p a:hover{
+    border-color: #2B2628;
+}
+
+.bomnext p{
+    letter-spacing: -0.5px;
+    font-kerning: normal;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: right;
+}
+.bomnext p a{
+    transition: all .5s ease-in;
+    border-bottom: 1px solid transparent;
+}
+.bomnext p a:hover{
+    border-color: #2B2628;
+}
+@media screen and (max-width:768px) {
+    .worktitle{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .workimg{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -5px;
+    }
+    #wa{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -5px;
+    }
+    #wb{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -5px;
+    }
+    #wc{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -5px;
+    }
+    .abouttitle{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .aboutintro{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .footercreate{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footercopy{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .contactall{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.italian-descrpiton{
+    width:50%
+}
+
+.italian-descrpiton p{
+    margin-bottom: 120px;
+}
